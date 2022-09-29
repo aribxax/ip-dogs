@@ -1,0 +1,365 @@
+html, body {
+    height: 100%;
+}
+body
+{
+    overflow-x:hidden;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 3%, rgba(203,203,203,1) 26%, rgba(255,255,255,1) 61%);
+    
+}
+.wrapper {
+    z-index: 0;
+}
+
+.card {
+    
+    display:inline-block;
+    justify-content: center;
+    width: 65%;
+    margin-left: 20rem;
+    margin-top: 1.4rem;
+   /*  height: 20rem; */
+    /* width: 50%; 
+    max-width: 980px; */
+    
+}
+/* @media only screen and (max-width: 200px) { div {width: 100%;}} */
+.cardBody {
+    margin-top: 1.5rem;
+    border-radius: 0.2vh;
+    position: absolute; 
+    width:100%;
+    font-family: Manrope-regular;
+    text-shadow: 5rem;
+    margin-left: -18.1rem;
+    
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.8vh;
+    margin-top: -1rem;
+    width: 34.3vh;
+    user-select: none;
+    
+    
+    
+}
+.h3 {
+    margin-left: 1rem;  
+}
+.temperaments {
+    display: flex;
+    flex-direction: row;
+    width: 30vh;
+    margin-left: 1rem;  
+
+}
+.bodyWeight {
+    background-color: rgba(176, 176, 176, 0.23);
+    margin-top: 1.1rem;
+    transition: 0.2s;
+    height: 7.3rem;
+    
+}
+.weight {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+.height {
+    margin-left: 0.5rem;
+}
+.lifeSpan{
+    margin-left: 0.5rem;
+}
+.bodyHeight {
+    background-color: rgba(176, 176, 176, 0.23);
+    margin-top: 1.1rem;
+    transition: 0.2s;
+    height: 7.3rem;
+}
+.bodyLifeSpan {
+    background-color: rgba(176, 176, 176, 0.23);
+    margin-top: 1.1rem;
+    transition: 0.2s;
+    height: 7.3rem;
+}
+.name {
+    color: rgb(186, 186, 186);
+    width: 43rem;
+    margin-bottom: 0;
+    margin-top: -0.1rem;
+    margin-left: -0.2rem;
+    text-align: left;
+    transition: 0.3s;
+    user-select: none;
+    /* background-color: rgba(179, 179, 179, 0.429); */
+
+}
+
+.nameInput {
+    background: none;
+    border: none;
+    height: 7rem;
+    color: rgb(39, 39, 39);
+    font-weight: bolder;
+    font-family: kiak-regular;
+    font-size: 5rem;
+    margin-bottom: -1.2rem;
+    margin-left: 0.1rem;
+    width: 50rem;
+    overflow: visible;
+}
+.name:hover {
+    color: rgba(39, 39, 39, 0.708);
+    
+}
+.nameAlert {
+    position: absolute;
+    color:rgba(255, 0, 0, 0.573);
+    margin-top: -7rem;
+    font-weight: bolder;
+}
+.imgAlert {
+    position: absolute;
+    color:rgba(255, 0, 0, 0.573);
+    margin-top: 2rem;
+    font-weight: bolder;
+    
+}
+.temperamentAlert {
+    position: absolute;
+    color:rgba(255, 0, 0, 0.573);
+    margin-top: 2.7rem;
+    margin-left: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.weightAlert {
+    position: absolute;
+    color:rgba(255, 0, 0, 0.573);
+    margin-top: -0.5rem;
+    margin-left: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: bolder;    
+}
+.heightAlert {
+    position: absolute;
+    color:rgba(255, 0, 0, 0.573);
+    margin-top: -0.5rem;
+    margin-left: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: bolder;   
+}
+.lifeAlert {
+    position: absolute;
+    color:rgba(255, 0, 0, 0.573);
+    margin-top: -0.5rem;
+    margin-left: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: bolder; 
+}
+.tempList {
+    height: 2rem;
+}
+
+.dogImage {    /* aca el float y object fit es para que todas las pics sean iguales */
+    float: left;
+    object-fit: cover;  
+    height: 39.9rem;
+    width: 50rem;
+    opacity: 1;
+    margin-top: 1.1rem;
+    margin-right: 1rem;
+    box-shadow: 0px 1px 6px 0px #b1b1b1;
+    user-select: none;
+}
+.imageUrl {
+    display: flex;
+    flex-direction: row;
+    margin-top: 17.5rem;
+    margin-left: 10rem;
+}
+.inputBorder {
+    width: 25rem;
+    height: 1.5rem;
+    font-size: 1.4rem;
+    border:none;
+    box-shadow: 0px 2px 6px 0px #b1b1b1;
+    
+}
+.previewBtn {
+    height: 1.5rem;
+    border: none;
+    width: 5.2rem;
+    font-family: manrope-regular;
+    font-size: 1rem;
+    padding-bottom: 1.6rem;
+    box-shadow: 0px 2px 6px 0px #b1b1b1;
+    margin-left: 0.5rem;
+    margin-top: -0rem;
+}
+.changePicture {
+    margin-top: 1rem;
+    padding-bottom: 1.7rem;
+    height: 1.5rem;
+    border: none;
+    font-family: manrope-regular;
+    font-size: 1rem;
+
+    box-shadow: 0px 2px 6px 0px #b1b1b1;
+}
+.newDogImg {
+    float: left;
+    object-fit: cover;  
+    height: 40rem;
+    width: 50rem;
+    opacity: 1;
+    margin-top: 0rem;
+    margin-right: 1rem;
+    box-shadow: 0px 1px 6px 0px #b1b1b1;
+    user-select: none;
+}
+.bodyTemperaments:hover {
+    box-shadow: 0px 2px 6px 0px #b1b1b1;
+}
+.bodyHeight:hover {
+    box-shadow: 0px 2px 6px 0px #b1b1b1;
+}
+.bodyLifeSpan:hover{
+    box-shadow: 0px 2px 6px 0px #b1b1b1;
+}
+.bodyWeight:hover{
+    box-shadow: 0px 2px 6px 0px #b1b1b1;
+}
+
+.back {
+    position: absolute;
+    margin-left: -2vh;
+    margin-top: -1vh;
+    z-index: 100;
+    font-family: manrope-regular;
+    transition: 0.3s;
+    font-size: 1.7rem;
+    user-select: none;
+}
+
+.back:hover {
+    font-size: 1.8rem;
+}
+.Navbar {
+    position: absolute;
+    margin-top: 2rem;
+}
+.holdPlace {
+    z-index: 0;
+    font-family: manrope-regular;
+    height: 2rem;
+    
+    margin-top: 2rem;
+    margin-bottom: -1.5rem;
+    margin-left: 10rem;
+}
+.tempList {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 4.3rem;
+    width: 20rem;
+    
+    
+    
+}
+.tempUnit {
+    margin-left: 0.3rem;
+    z-index: 100;
+}
+.inputTemperaments {
+    font-family: manrope-regular;
+    font-size: 2.1vh;
+    margin-top: 1rem;
+    background:none;
+    border:none;
+    font-weight: bolder;
+   
+    
+}
+.bodyTemperaments {
+    background-color: rgba(176, 176, 176, 0.23);
+    margin-top: 2rem;
+    height: 7.3rem;
+    
+    transition: 0.2s;
+}
+/* .temperamentsInput {
+    width: 2rem;
+   
+} */
+
+.tempOption {
+    width: 1rem;
+}
+
+.weightBody {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.inputWeight {
+    width: 2.9rem;
+    height: 1rem;
+    border:none;
+    margin-left: 1rem;
+    margin-right:1rem;
+}  
+.heightBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.createWrapper {
+  margin-top: 1rem;
+  display: flex;
+
+}
+.createBtn {
+    
+    height: 1.5rem;
+    border: none;
+    width: 15rem;
+    font-family: manrope-regular;
+    font-size: 1.3rem;
+    padding-bottom: 2.2rem;
+    box-shadow: 0px 2px 6px 0px #b1b1b1;
+    margin-top: 4.2rem;
+    font-weight: bolder;
+   margin-left: 3rem;
+   transition: 0.3s;
+}
+.createBtn:hover {
+    transform: scale(1.3);
+}
+
+s.goBackBody {
+    display: inline-block;
+  
+
+}
+.left {
+    height: 4rem;
+    margin-top: -0.3rem;
+    margin-left: -53.5rem;
+    position: absolute;
+    transition: 0.3s;
+    z-index: 100;
+}
+.left:hover {
+    transform: scaleX(1.3); 
+}

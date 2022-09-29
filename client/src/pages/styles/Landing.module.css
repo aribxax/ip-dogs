@@ -1,0 +1,123 @@
+html, body {
+    height: 100%;
+    
+}
+.background1 {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../img/pattern1.png');
+    background-repeat: repeat;
+    object-fit: cover;
+    height: 19rem;
+    margin-top: 5rem;
+    z-index: 0;
+    mask-image: linear-gradient(to bottom, transparent 3%, black 100%);
+  }
+.body {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-left: 10rem;
+}
+.logo {
+    font-family: kiak-regular;
+    font-size: 8rem;
+    color:rgb(37, 37, 37);
+    font-weight: bolder;
+    background-color: rgba(196, 196, 196, 0.897);
+    width: 35rem;
+    /* margin: 0 auto; */
+    margin-left: 13rem;
+    margin-top: 15rem;
+    margin-bottom: -6rem;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    box-shadow: 0px 1px 6px 0px #b1b1b1;
+    border-radius: 0.2vh;
+    transition: 0.3s;
+    transform: skewX(-20deg);
+    height: 8rem;
+    z-index: 100;
+}
+.logo:hover {
+    color:rgb(65, 65, 65);
+    user-select: none;
+    transform: skewX(0deg);
+}
+
+.button {
+    width: 25rem;
+    font-family: manrope-regular;
+    font-weight: bolder;
+    border:none;
+    user-select: none;
+    background:none;
+    font-size: 2rem;
+    box-shadow: 0px 1px 6px 0px #b1b1b1;
+    margin-top: 12.7rem;
+    border-radius: 0.2vh;
+    transition: 0.3s;
+    z-index: 105;
+    margin-right: 52.5rem;
+}
+
+.button:hover {
+    transform: scale(1.1)
+
+}
+
+
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+
+.picctn {
+    position: absolute;
+
+    width: 100vw;   
+    height: 300px;
+    margin-top: 12.5rem;
+    margin-left: 7rem;
+    z-index: 0;
+    
+}
+
+.picctn > img {
+   position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+    animation-delay: 2s;
+}
+img:nth-child(3) {
+    animation-delay: 4s;
+}
+img:nth-child(4) {
+    animation-delay: 6s;
+}
+img:nth-child(5) {
+    animation-delay: 8s;
+}

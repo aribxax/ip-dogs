@@ -1,0 +1,38 @@
+.dogImage {    /* aca el float y object fit es para que todas las pics sean iguales */
+    float: left;
+    object-fit: cover;  
+/*     height: 20.5rem;
+    width: 16rem; */
+    height: 18.1rem;
+    width: 25rem;
+ 
+}
+.cardName {
+    font-size: 0.8rem;
+    font-family: manrope-regular;
+    margin-top: -0.3rem;
+    margin-bottom: -0.5rem;
+
+}
+.cardBody {    
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+/*height: 30rem;
+    width: 16rem; */
+    height: 21rem;
+    width: 25rem;
+    margin-left: 2.5rem;
+    margin-right: 1rem;
+    margin-top: 2.5rem;
+    border-radius: 0.2vh;
+    /* box-shadow: 0px 1px 6px 0px #b1b1b1; */
+    font-size: 0.6rem;
+
+    pointer-events: auto;
+    transform: scale(1);
+    transition: all 0.4s;
+    user-select: none;
+    font-family: sans-serif;
+}

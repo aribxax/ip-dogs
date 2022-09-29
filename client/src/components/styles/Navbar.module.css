@@ -1,0 +1,115 @@
+.navBody {
+    display:flex;
+    flex-direction: column;
+    position: fixed;    
+    width: 14%;
+    height: 120%;
+    margin-left: 176vh;
+    /* justify-content: center; */
+    color:rgb(48, 48, 48);
+    margin-top: -4.5rem;
+ 
+    font-family: manrope-regular;
+    /* font-size: 1.5rem; */
+    z-index:102;
+    background-position: fixed;
+    box-shadow: 0px 1px 6px 0px #b1b1b1;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 3%, rgb(247, 247, 247) 26%, rgba(255,255,255,1) 61%);
+    object-fit: cover;
+ 
+}
+
+.linksBody {
+    z-index: 100;
+    user-select: none;
+    margin-top: 1.5rem;
+    margin-right: 5.4rem;
+}
+
+.navLinks {
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform .2s; /* Animation */
+    margin-right: -3rem;
+    margin-left: 1.5rem;
+    width: 100%;
+    box-shadow: 0px 1px 6px 0px #b1b1b1;
+
+}
+.navLinks:hover{
+    transform: scale(1.1); 
+    color:#f58f7c;
+    background-color: rgba(229, 229, 229, 0.33);
+}
+
+a:hover,a:focus, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.sticky + .content {
+    padding-top: 60px;
+  }
+
+.vertical {
+    display: inline-block;
+    border-left: 0.1rem solid rgb(252, 7, 7);
+    border-bottom: none;
+    margin-left: -75vh;
+    margin-top: 5.5rem;
+    padding-left: 10%;
+    
+    height: 100%;
+    border-right: none;
+}
+.logo {
+    /*     margin-top: 3.5rem;
+    margin-right: -10rem; */
+/*     margin-left: 0.2rem;
+    font-size: 2.5rem;
+    margin-top: 0rem;
+    width: 14.5rem; */
+    font-size: 2rem;
+    margin-top: 2.8rem;
+    margin-left: 1.5rem;
+    width: 12rem;
+    height: 2.8rem;
+
+    font-family: Kiak-regular;
+    user-select: none;
+    transition: 0.3s;
+    background-color: rgb(212, 212, 212);
+    border-radius: 0.2vh;
+    padding-bottom: 1rem;
+    transform: skewX(-20deg);
+    
+}
+
+.logo:hover {
+    /* color:rgb(20, 161, 161); */
+    background-color: rgba(229, 229, 229, 0.486);
+    color:#f58f7c;
+    transform: skewX(0deg);
+   
+    
+}
+.backgroundWrapper {
+    z-index: 0;
+    background-image: url('../../img/pattern1.png');
+    background-repeat: repeat;
+    mask-image: linear-gradient(to bottom, transparent , white);
+    height: 60rem;
+    margin-top: 19rem;
+    position: absolute;
+    width: 100%;
+
+}

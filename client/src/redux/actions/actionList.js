@@ -1,0 +1,15 @@
+export const GET_DOGS = 'GET_DOGS'
+export const GET_DETAILS = 'GET_DETAILS';
+export const ADD_DOG = 'ADD_DOG';
+export const CLEAR_DETAIL = 'CLEAR_DETAIL';
+export const GET_TEMPERAMENTS = 'GET_TEMPERAMENTS';
+export const CLEANER = 'CLEANER';
+export const SEARCH_BAR = 'SEARCH_BAR';
+export const FILTER_CREATED = 'FILTER_CREATED';
+export const RESET_FILTERS = 'RESET_FILTERS';
+export const FILTER_BY_ORDER = 'FILTER_BY_ORDER';
+export const OPEN_CLOSE = 'OPEN_CLOSE';
+export const FILTER_BY_TEMPERAMENT = 'FILTER_BY_TEMPERAMENT';
+export const SEARCH_BAR_ENDPOINT = 'SEARCH_BAR_ENDPOINT';
+export const FILTER_BY_WEIGHT = 'FILTER_BY_WEIGHT';
+export const ADD_FAVORITE = 'ADD_FAVORITE';

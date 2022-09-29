@@ -1,0 +1,101 @@
+.cardBody {    
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+/*height: 30rem;
+    width: 16rem; */
+    height: 23.6rem;
+    width: 25rem;
+    margin-left: 2.5rem;
+    margin-right: 1rem;
+    margin-top: 2.5rem;
+    border-radius: 0.2vh;
+    box-shadow: 0px 1px 6px 0px #b1b1b1;
+    font-size: 0.6rem;
+
+    pointer-events: auto;
+    transform: scale(1);
+    transition: all 0.4s;
+    user-select: none;
+    font-family: sans-serif;
+}
+
+.cardBody:hover {
+    transform: scale(1.02);
+  }
+  
+.content:hover .cardBody:not(:hover) {
+    transform: scale(0.9);
+  }
+
+
+.cardName{
+    margin-top: -0.4rem;
+    margin-bottom: -0.6rem;
+    color:rgb(31, 31, 31);
+    font-family: manrope-regular;
+    
+    
+}
+
+.cardImage{
+    border-radius: 20px;
+    margin: auto;
+
+    margin-top: 0rem;
+    padding-bottom: 0;
+
+}
+
+.dogImage {    /* aca el float y object fit es para que todas las pics sean iguales */
+    float: left;
+    object-fit: cover;  
+/*     height: 20.5rem;
+    width: 16rem; */
+    height: 18rem;
+    width: 25rem;
+    opacity: 1;
+
+}
+
+.cardTemperaments {
+    
+    /* margin-bottom: 36.5vh; */
+    margin-top: 20.5rem;
+    margin-left: 1.6vh;
+    text-decoration: none;
+   
+    text-indent: 2px;
+    width: auto;
+    /* height: 5rem; */
+    font-size: 0.7rem;
+    
+    overflow-wrap: break-word;
+    overflow: hidden; /* visible */
+    white-space: pre-wrap;
+    font-family: opensans-regular;
+
+    position: absolute;
+}
+
+.cardWeight{
+    font-family: OpenSans-regular;
+    margin-left: 19.6rem;
+    margin-top: 230px;
+    width: 4rem;
+    height: 1.1rem;
+    text-align: center;
+    color:rgb(31, 31, 31);
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.736);
+    font-size: 0.7rem;
+    border-radius: 0.2vh;
+}
+.weight{
+    margin-top: -0.1vh;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
