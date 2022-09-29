@@ -11,23 +11,12 @@ import {
     FILTER_BY_TEMPERAMENT,
     SEARCH_BAR_ENDPOINT,
     FILTER_BY_WEIGHT,
-    ADD_FAVORITE
+
     /* SEARCH_BAR_ENDPOINT */
 } from './actionList';
 const axios = require('axios').default;
 
-export const addToFavorite = (id) => {
-    return async function(dispatch){
-        try{
-            return dispatch({
-                type:ADD_FAVORITE,
-                payload: id
-            })
-        }catch(err){
-            console.log(err);
-        }
-    }
-}
+
 export const openClose = (id) => {
     return async function(dispatch){
         try{

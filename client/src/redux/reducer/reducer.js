@@ -13,7 +13,7 @@ import {
     SEARCH_BAR_ENDPOINT,
     FILTER_BY_WEIGHT,
     OPEN_CLOSE,
-    ADD_FAVORITE
+
 } from '../actions/actionList';
 
 const initialState = {
@@ -23,7 +23,6 @@ const initialState = {
     userDogs:[],
     temperaments:[],
     openClose:'',
-    favoriteDogs:[]
 }
 
 const rootReducer = (state = initialState, action) => {
@@ -58,22 +57,26 @@ const rootReducer = (state = initialState, action) => {
                 temperaments: action.payload
             }
         case SEARCH_BAR:
-            let searchDogs = [...state.dogsBackUp, ...state.userDogs]
+            let searchDogs = [...state.dogsBackUp]
+
             //eslint-disable-next-line
             if(!(/^[0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/.test(action.payload))){
                 let result = searchDogs.filter(e=>(e.name.toLowerCase()).includes(action.payload.toString().toLowerCase().trim())) //added trim here
+                
                 if(result.length > 0){
                     return {
                         ...state,
                         dogs: result
                     }
-                }else{
+                }
+                else{
+                    
                     alert('Breed not found')
                     return{
                         ...state
                     }
                 }
-            }else{
+                }else{
                 alert('Special characters are not alllowed')
                 return{
                     ...state
@@ -164,10 +167,11 @@ const rootReducer = (state = initialState, action) => {
         case FILTER_BY_WEIGHT :
         
         let listWeight = [...state.dogs]
+            console.log(listWeight)
 
         if(action.payload === 'minMax') {
-            listWeight.sort( (obj1, obj2) => {
-                if( Number(obj1.weight.metric.split(" - ")[0]) < Number(obj2.weight.metric.split(" - ")[0])) {
+            listWeight.sort( (obj1, obj2) => { 
+                if( Number(obj1.weight.split(" - ")[0]) < Number(obj2.weight.split(" - ")[0])) {
                     return -1
                 } else {
                     return 1
@@ -176,29 +180,18 @@ const rootReducer = (state = initialState, action) => {
         }
         if(action.payload === 'maxMin') {
             listWeight.sort( (obj1, obj2) => {
-                if(Number(obj1.weight.metric.split(" - ")[1]) < Number(obj2.weight.metric.split(" - ")[1])) {
+                if(Number(obj1.weight.split(" - ")[1]) < Number(obj2.weight.split(" - ")[1])) {
                     return 1
                 } else {
                     return -1
                 }
             } )
+        
         }
         return {
             ...state,
             dogs: listWeight,
         }
-        case ADD_FAVORITE:
-
-   /*          if(state.favoriteDogs.length> 1) {
-                const find = state.favoriteDogs.find(e => parseInt(e.id) === parseInt(action.payload));
-                if(find.length ) return alert('You have it already on favorites');
-            } */
-            /* const operation = state.dogs.find(e => parseInt(e.id) === parseInt(action.payload) ) */
-            const operation2 = state.dogs.filter(e => parseInt(e.id) === parseInt(action.payload));
-            return {
-                ...state,
-                favoriteDogs: [...state.favoriteDogs, ...operation2]
-            }
         default:
           return state
     } 

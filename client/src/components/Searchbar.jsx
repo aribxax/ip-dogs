@@ -34,7 +34,8 @@ function Searchbar({setCurrentPage, temperaments}) {
         setCurrentPage(1);
     }
 
-    const handlerChangeTemperament = (e) => {// I think thos both do the same.
+
+    const handlerChangeTemperament = (e) => {
         let value = e.target.value;
         setFilters({
             ...filters,
@@ -43,7 +44,7 @@ function Searchbar({setCurrentPage, temperaments}) {
         dispatch(filterByTemperament(value))
         setCurrentPage(1)
     }
-    const handlerOrigin = (e) => {  // i think this is both the same
+    const handlerOrigin = (e) => { 
         let value = e.target.value;
         setFilters({
             ...filters,
@@ -52,6 +53,7 @@ function Searchbar({setCurrentPage, temperaments}) {
         dispatch(filterByCreated(value))
         setCurrentPage(1)
     }
+
     
     const filtersReset = (e) => {
         e.preventDefault(e);
@@ -95,7 +97,7 @@ const onSubmit = (e) => {
         <div className={s.body}>
 
             <form onSubmit={(e)=> onSubmit(e)} className={s.searchBar}>
-                <input type='text' /* pattern='/^[A-Za-z]?[A-Za-z ]*$/' */ pattern="^[A-Za-z\s]+$" className={s.searchInput} 
+                <input type='text'  pattern="^[A-Za-z\s]+$" className={s.searchInput} 
                 onChange={(e) => handlerMessage(e)} placeholder='Search breeds'/>
                 <button type='submit' value='Search' className={s.btn}><img className={s.searchBtn} src={search} alt='search' /></button>
                 
